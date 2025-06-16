@@ -1,0 +1,43 @@
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+#accordion {
+  text-align: left;
+  color: #575756;
+}
+
+#accordion button p {
+  margin: 0;
+}
+
+#accordion .card-header {
+  background-color: transparent;
+  padding-left: 0;
+}
+
+#accordion .btn {
+  width: 100%;
+  color: #575756;
+  padding: 0;
+  margin: 0;
+  height: 4vh;
+}
+
+#accordion .fa {
+  float: right;
+}
+
+#accordion .accordion-title {
+  float: left;
+  text-align: left;
+}
+
+[data-toggle='collapse'] .fa:before {
+  content: '\f13a';
+}
+
+[data-toggle='collapse'].collapsed .fa:before {
+  content: '\f138';
+}

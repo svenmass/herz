@@ -1,0 +1,13 @@
+// Separate set of styles only for gutenberg blocks
+
+// @import 'fonts';
+
+.wp-block {
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Helvetica' !important;
+}
+
+.acf-block-preview {
+  @import 'style';
+}

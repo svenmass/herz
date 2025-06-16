@@ -1,0 +1,25 @@
+.small_head {
+  color: #fff;
+}
+
+.small_head img {
+  float: right;
+  width: auto;
+  max-width: 100%;
+}
+
+.small_head h2 {
+  margin-bottom: 1rem;
+}
+
+.small_head p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .small_head img {
+    float: none;
+    margin-top: 3rem;
+  }
+}

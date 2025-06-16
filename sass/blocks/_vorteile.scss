@@ -1,0 +1,52 @@
+.vorteile {
+  color: #fff;
+  margin-bottom: 1rem;
+  min-height: 100%;
+}
+
+.vorteile-wrap {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vorteile img {
+  max-width: 50%;
+  min-height: 10vh;
+  max-height: 10vh;
+  margin: 2vh;
+}
+
+.vorteile h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  color: #fff;
+}
+
+.vorteile p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+.vorteile a {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.vorteile .card-body {
+  margin-top: 0;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .vorteile h3 {
+    font-size: 1.7em;
+  }
+  .vorteile p {
+    font-size: 0.9rem;
+  }
+}

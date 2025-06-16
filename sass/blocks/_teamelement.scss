@@ -1,0 +1,46 @@
+.team {
+  text-align: left;
+  color: #fff;
+}
+
+.team .row {
+  margin-bottom: 1.3rem;
+}
+
+.team h3 {
+  color: #fff;
+}
+
+.team ul {
+  color: #fff;
+}
+
+.team p {
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.team-col {
+  overflow: hidden;
+}
+
+.team-col img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .team .row {
+    margin-bottom: 1.3rem;
+  }
+  .team-col {
+    margin-bottom: 0;
+    min-height: 20vh;
+  }
+  .team .has-box-bg {
+    min-height: 50vh !important;
+  }
+  .team p {
+    font-size: 1rem;
+  }
+}

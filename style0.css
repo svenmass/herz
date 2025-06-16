@@ -1,0 +1,979 @@
+/*
+Theme Name: Herz Apotheke Siegen
+Theme URI: -
+Author: Sebastian Schaar
+Description: Herz Apotheke Siegen Stylesheet
+Version: 1.0
+*/
+
+html {
+  font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  height: 100%;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+body {
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #575756;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.starter-template {
+  /* padding: 3rem 1.5rem; */
+  text-align: center;
+  margin-top: 82px;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 100px;
+}
+
+.has-main-bg-color {
+  background-color: #f3f0eb;
+}
+
+.navbar {
+  font-family: 'Titillium Web', sans-serif;
+  height: 82px;
+  width: 1410px;
+  margin: 0 auto;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(179, 179, 179, 1);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+}
+
+.navbar-collapse {
+  /* max-width: 1400px; */
+  /* justify-content: center; */
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
+
+.navbar-expand-md {
+  justify-content: center;
+}
+
+.dropdown-menu {
+  width: 100%;
+  left: 0px;
+  border: 0px solid #fff;
+  border-radius: 0;
+  font-size: 0.6rem;
+  border-bottom: 1px solid rgba(179, 179, 179, 1);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  background-color: #f3f0eb;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 17vh;
+  padding-left: 16.8%;
+}
+
+.menu-image img {
+  position: absolute;
+  bottom: 0;
+  max-height: 99%;
+  left: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #9baa8a;
+  background-color: transparent;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+  max-width: 16%;
+}
+
+.navbar-brand img {
+  max-height: auto;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:visited {
+  color: #575756;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #9baa8a;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #9baa8a;
+}
+
+/* mega menu start */
+
+@media screen and (min-width: 600px) {
+  .has-mega-menu {
+    position: static;
+  }
+  li.has-mega-menu .sub-menu {
+    width: 100%;
+    background-color: #f3f0eb;
+    position: absolute;
+    top: NNpx;
+    /*insert the needed value*/
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+  }
+  li.has-mega-menu:hover > .sub-menu {
+    /*flexbox fallback for browsers that do not support CSS GRID lyout*/
+    display: flex;
+    flex-wrap: wrap;
+    /*CSS GRID lyout*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  li.has-mega-menu:hover > .sub-menu {
+    grid-template-columns: repeat(auto-fit, minmax(33.3333%, 1fr));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  li.has-mega-menu:hover > .sub-menu {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
+
+@media screen and (min-width: 600px) {
+  li.mega-menu-column {
+    width: 100%;
+    max-width: 100%;
+    min-height: 1px;
+    padding: 10px 25px;
+    flex: 1 0 calc(50%);
+    padding: 0;
+    height: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  li.mega-menu-column {
+    flex: 1 0 calc(33.333%);
+    padding: 0;
+    height: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  li.mega-menu-column {
+    flex: 1 0 calc(25%);
+    padding: 0;
+    height: 1rem;
+  }
+}
+
+/* mega menu ends */
+
+.meta-menu-right {
+  font-size: 14px;
+  justify-content: flex-end;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.meta-menu-right a {
+  font-size: 0.6rem;
+  color: #575756;
+}
+
+.meta-menu-right a:hover {
+  color: #9baa8a;
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .meta-menu-right {
+    font-size: 0.65rem;
+  }
+}
+
+/*Standarts Start*/
+
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+hr {
+  border-top: 1px solid #fff;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+a {
+  font-size: 0.7rem;
+  color: #575756;
+}
+
+a:hover {
+  color: #9baa8a;
+  text-decoration: none;
+}
+
+ul {
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+ol {
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+/*Standarts Ende*/
+
+.has-box-padding {
+  padding: 1rem !important;
+}
+
+.has-box-margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.has-box-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* min-height: 35vh; */
+}
+
+/*Video Styles */
+
+.video-wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  visibility: visible;
+}
+
+.video-iframe {
+  top: 0;
+  visibility: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-iframe iframe,
+.video-iframe object,
+.video-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#videoclick:target .video-iframe {
+  visibility: visible;
+}
+
+/* Video Styles End */
+
+.has-head-box-right {
+  width: 50%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #575756;
+  width: 100%;
+  margin-top: 15px;
+}
+
+footer .row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer-wrap {
+  max-width: 1440px;
+  min-width: 100px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 25px 0px 25px 0px;
+  margin: 0 auto;
+}
+
+.footer-wrap img {
+  width: 100%;
+}
+
+.footer-social {
+  width: 28% !important;
+  float: right;
+  margin-left: 10px;
+}
+
+.footer-uhr {
+  width: 20% !important;
+  margin-right: 15px;
+  margin-top: 5px;
+  float: left;
+}
+
+footer ul {
+  font-size: 0.6rem;
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+footer .adresse {
+  color: #a7a9ac;
+}
+
+/*404 Styles */
+
+.has-error {
+  color: #fff;
+}
+
+.has-error img {
+  float: right;
+  width: auto;
+  max-width: 100%;
+}
+
+.has-error a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.has-error a:hover {
+  text-decoration: none;
+}
+
+.d-flex {
+  justify-content: space-between;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* .has-devider {
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+} */
+
+.flex-box-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-box-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.col-has {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.col-has-full {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.h2-wrap {
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Bootstrap Styles Start */
+
+.card {
+  border: none;
+}
+
+/* Carousel */
+
+.carousel-indicators {
+  top: 95%;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: transparent;
+  padding: 1.5rem;
+  margin-top: 1vh;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  position: absolute;
+  top: 2.5vh;
+  right: 15px;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(87, 87, 86, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  font-size: 2rem;
+}
+
+/* Bootstrap Styles End */
+
+/*Post Styles */
+
+.has-post img {
+  min-width: 100%;
+  height: auto;
+}
+
+.has-post-text {
+  padding: 1.4rem !important;
+}
+
+.has-post-text a {
+  position: relative;
+  color: #575756;
+  text-decoration: none;
+}
+
+.has-post-text a:hover,
+.has-post-text a:visited,
+.has-post-text a:focus {
+  color: #575756;
+  text-decoration: none;
+}
+
+.has-post-text a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  background-color: #575756;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.has-post-text a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  visibility: hidden;
+  background-color: #575756;
+}
+
+img.attachment-post-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.has-excerpt {
+  margin-top: 1rem;
+  /*margin-bottom: 1rem;*/
+}
+
+.has-excerpt p {
+  margin-bottom: 0.5rem;
+}
+
+.has-excerpt .has-box-padding {
+  padding: 1rem !important;
+}
+
+.has-excerpt a {
+  position: relative;
+  font-size: 0.6rem;
+  color: #575756;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.has-excerpt a:before {
+  content: '';
+  position: absolute;
+  width: 66%;
+  height: 2px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  background-color: #575756;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.has-excerpt a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  visibility: hidden;
+  background-color: #575756;
+}
+
+.has-excerpt .flex-box-column {
+  justify-content: space-between;
+}
+
+/*WP Forms */
+
+div.wpforms-container-full .wpforms-form input[type='radio']:focus {
+  background-color: #000;
+}
+
+/* Date Picker - Time Picker Styles */
+
+input[type='radio'] {
+  margin: -0.15rem;
+  margin-right: 0.1rem;
+  padding: 0.4rem;
+  -webkit-appearance: none;
+  outline: 0.1em solid #9baa8a;
+  outline-offset: 0.1em;
+  cursor: pointer;
+}
+
+input[type='radio']:checked {
+  display: inline-block;
+  background-color: #9baa8a;
+}
+
+.xdsoft_datetimepicker {
+  background-color: #f1f2f2 !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  color: #939598 !important;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px !important;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+.xdsoft_datetimepicker.xdsoft_inline {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  color: #939598;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker {
+  width: 100% !important;
+  background-color: #f1f2f2;
+  margin-left: 0 !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker {
+  width: 100% !important;
+  background-color: #f1f2f2;
+  margin-left: 0 !important;
+}
+
+.xdsoft_timepicker:before {
+  content: 'Uhrzeit';
+  font-size: 0.6rem;
+}
+
+.xdsoft_time {
+  box-sizing: border-box;
+  padding: 5px !important;
+  background-color: #fff !important;
+  margin: 2px !important;
+  color: #939598 !important;
+}
+
+.xdsoft_time_variant {
+  margin-top: 0px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 5px !important;
+  margin-right: 4px !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+  font-size: 0.7rem !important;
+  height: auto !important;
+  width: 23%;
+  border-top: 0px !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+  height: 100px !important;
+  border: 0 !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
+  display: none !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+  border: 0px solid #ddd !important;
+  font-size: 0.6rem !important;
+}
+
+.xdsoft_scrollbar {
+  display: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_month {
+  width: 91% !important;
+}
+
+.xdsoft_label {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+  background-color: #f1f2f2 !important;
+}
+
+.xdsoft_year,
+.xdsoft_today_button {
+  display: none !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i {
+  display: none !important;
+}
+
+.xdsoft_disabled {
+  text-decoration: line-through;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+  height: 40px !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td > div {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker
+  .xdsoft_timepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_current {
+  background: #9baa8a !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+/* Contact Form 7 Styles */
+
+span.wpcf7-list-item {
+  display: inline-block;
+  background-color: #f1f2f2;
+  margin: 0px 0 35px 0;
+  padding: 24px;
+}
+
+.datenschutz span.wpcf7-list-item {
+  background-color: transparent;
+  margin: 0px 0 24px 0;
+  padding: 0px;
+}
+
+.wpcf7 h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 0.5rem;
+}
+
+.kontaktdaten input {
+  width: 100%;
+  padding: 9px;
+}
+
+.datenschutz input {
+  width: 20px;
+  padding: 0px;
+}
+
+.wpcf7-submit {
+  background-color: #9baa8a;
+  shadow: none;
+  border: none;
+  color: #fff;
+  width: 33% !important;
+  float: left;
+  padding: 12px !important;
+}
+
+/* mobile Styles */
+
+@media (max-width: 575px) {
+  .footer-wrap .col-sm-2 {
+    text-align: center;
+  }
+  .footer-wrap .col-sm-6 {
+    text-align: center;
+  }
+  .footer-wrap .col-sm-4 {
+    text-align: center;
+    padding: 0;
+  }
+  footer ul {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+  footer p {
+    font-size: 1.4rem !important;
+  }
+  .col-sm-2 a {
+    font-size: 1.6rem;
+  }
+  .footer-uhr {
+    width: 20% !important;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .footer-wrap img {
+    width: 70%;
+    float: none;
+    margin-bottom: 15px;
+  }
+  .footer-social {
+    width: 27% !important;
+    float: none;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  ul {
+    font-size: 1.4rem;
+  }
+  .navbar-nav {
+    background-color: #f3f0eb;
+    min-width: 100%;
+    padding: 15px;
+  }
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .nav-link:visited {
+    font-size: 1.5rem;
+  }
+  .navbar-collapse {
+    position: absolute;
+    background-color: #f3f0eb;
+    margin-top: 0px;
+    width: 100%;
+    top: 85px;
+    left: 0px;
+    padding-bottom: 25px;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    top: 2.7vh;
+  }
+  .navbar-brand {
+    position: absolute;
+    left: 15px;
+  }
+  .navbar-dark .navbar-brand {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  .meta-menu-right a {
+    font-size: 1.1rem;
+  }
+  i.fa {
+    font-size: 2rem;
+  }
+  .fixed-top {
+    position: absolute;
+  }
+  .dropdown-menu {
+    width: 100%;
+    min-height: auto;
+    border: 0px solid #fff;
+    border-radius: 0;
+    font-size: 1.6rem;
+    border-bottom: 0px solid rgba(179, 179, 179, 1);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(201, 201, 201, 1);
+    -moz-box-shadow: 0px 0px 0x 0px rgba(201, 201, 201, 1);
+    box-shadow: 0px 0px 0px 0px rgba(201, 201, 201, 1);
+    background-image: none;
+    padding-left: 0rem;
+  }
+  .menu-image img {
+    display: none;
+  }
+  li.mega-menu-column {
+    height: auto;
+  }
+  .meta-menu-right {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  .meta-menu-right .col-sm-4 {
+    padding-bottom: 10px;
+  }
+  .has-box-bg {
+    min-height: 40vh;
+  }
+  footer .col-sm-3 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  footer a {
+    /* font-size: 1.6rem; */
+  }
+  footer ul {
+    font-size: 0.7rem;
+  }
+  /*mobile Form Styles*/
+  label {
+    font-size: 1.4rem;
+  }
+  /* mobile Date Picker Styles*/
+  .xdsoft_datetimepicker .xdsoft_calendar td,
+  .xdsoft_datetimepicker .xdsoft_calendar th {
+    font-size: 1.4rem !important;
+  }
+  .xdsoft_datetimepicker .xdsoft_month {
+    width: 87% !important;
+  }
+  .xdsoft_label span {
+    font-size: 1.7rem;
+  }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+    font-size: 1.4rem !important;
+  }
+  .xdsoft_timepicker:before {
+    font-size: 1.7rem;
+  }
+  .wpcf7 h3 {
+    font-size: 2rem;
+  }
+}
