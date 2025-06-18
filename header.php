@@ -12,25 +12,20 @@
 </head>
 
 <body class="<?php echo implode(' ', get_body_class()); ?>">
+<header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar navbar-dark has-main-bg-color dark fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-brand">
+                <a class="more-link" href="<?php echo home_url('/'); ?>">
                 <?php
-                $linklogo = get_field('link_logo', 'option');
-                if ($linklogo) : ?>
-                    <a class="more-link" href="<?php echo $linklogo ?>">
-                    <?php endif;
-                    ?>
-                    <?php
-                    $logo = get_field('menu_logo', 'option');
-                    if ($logo) : ?>
-                        <img src="<?php echo $logo ?>" />
-                    <?php endif;
-                    ?>
-                    </a>
+                $logo = get_field('menu_logo', 'option');
+                if ($logo) : ?>
+                    <img src="<?php echo $logo ?>" alt="Logo der Website" />
+                <?php endif; ?>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <?php wp_nav_menu(array(
@@ -71,4 +66,5 @@
             </div>
         </nav>
     </div>
+</header>
     <main>
