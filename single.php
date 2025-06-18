@@ -1,11 +1,8 @@
 <?php
 get_header(); ?>
 <div class="container starter-template">
-
-                          <?php the_content(); ?>
-
-
-
+<main>
+    <?php the_content(); ?>
 
     <?php
     // Get a list of the current post's categories
@@ -36,7 +33,7 @@ get_header(); ?>
                 <div class="row space-between">
                     <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-                        <div class="col-md-6 col-sm-12 col-has">
+                        <article class="col-md-6 col-sm-12 col-has">
                             <div class="row has-excerpt no-gutters">
                                 <div class="col-md-6 col-sm-12">
                                     <?php the_post_thumbnail(); ?>
@@ -47,7 +44,7 @@ get_header(); ?>
                                     <a class="more-link" href="<?php the_permalink() ?>" title="<?php the_title() ?>" rel="bookmark">AUSFÜHRLICHER ARTIKEL</a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                     <?php endwhile; ?>
                 </div>
@@ -77,5 +74,6 @@ get_header(); ?>
             <?php the_field('news_about_us_absatz_3_full'); ?>
         </div>
     </div>
+</main>
 </div>
 <?php get_footer(); ?>

@@ -9,7 +9,7 @@ $aboutusparagraph3 = get_field('about_us_absatz_3_full');
 $aboutusheadline = get_field('about_us_ueberschrift');
 
 ?>
-<div class="row space-between no-gutters about-us" style="background-color:<?php echo $aboutusbgcolor; ?>">
+<div class="row space-between no-gutters about-us" style="background-color:<?php echo $aboutusbgcolor; ?>" aria-label="Über uns Abschnitt">
     <div class="col-md-12 col-sm-12 col-has">
         <h2><?php echo $aboutusheadline; ?></h2>
     </div>

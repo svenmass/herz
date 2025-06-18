@@ -24,9 +24,11 @@ $teaser2linkright = get_field('teaserelement_2_rechts_link');
                 <h2><?php echo $teaser2ueberschriftleft; ?></h2>
                 <p><?php echo $teaser2paragraphleft; ?></p>
             </div>
-            <img src="<?php echo $teaser2imageleft; ?>" />
+            <img src="<?php echo $teaser2imageleft; ?>" alt="Bild des linken Teaserelements 2">
             <div class="bottom-link-wrap">
-                <a href="<?php echo $teaser2linkleft; ?>"><?php echo $teaser2subheadlineleft; ?></a>
+                <a href="<?php echo $teaser2linkleft; ?>" aria-label="Mehr über <?php echo $teaser2subheadlineleft; ?>">
+                    <?php echo $teaser2subheadlineleft; ?>
+                </a>
             </div>
         </div>
     </div>
@@ -37,9 +39,11 @@ $teaser2linkright = get_field('teaserelement_2_rechts_link');
                 <h2><?php echo $teaser2ueberschriftright; ?></h2>
                 <p><?php echo $teaser2paragraphright; ?></p>
             </div>
-            <img src="<?php echo $teaser2imageright; ?>" />
+            <img src="<?php echo $teaser2imageright; ?>" alt="Bild des rechten Teaserelements 2">
             <div class="bottom-link-wrap">
-                <a href="<?php echo $teaser2linkright; ?>"><?php echo $teaser2subheadlineright; ?></a>
+                <a href="<?php echo $teaser2linkright; ?>" aria-label="Mehr über <?php echo $teaser2subheadlineright; ?>">
+                    <?php echo $teaser2subheadlineright; ?>
+                </a>
             </div>
         </div>
     </div>

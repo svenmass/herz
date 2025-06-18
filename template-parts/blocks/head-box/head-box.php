@@ -34,12 +34,12 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                 <h2><?php echo $paneltopueberschrift; ?></h2>
                 <p><?php echo $paneltopsubheadline; ?></p>
                 <h3><?php echo $paneltopprice; ?><?php echo ' €'; ?></h3>
-                <img src='<?php echo $paneltopimage; ?>' />
+                <img src='<?php echo $paneltopimage; ?>' alt="Bild des oberen Panels">
             </div>
             <div class="head-box-left-bottom-wrap">
                 <h2><?php echo $panelbottomueberschrift; ?></h2>
                 <div class="bottom-link-wrap">
-                    <p><a href="<?php echo $paneltopbottomlink; ?>"><?php echo $panelbottomsubheadline; ?></a></p>
+                    <p><a href="<?php echo $paneltopbottomlink; ?>" aria-label="Mehr über <?php echo $panelbottomsubheadline; ?>"><?php echo $panelbottomsubheadline; ?></a></p>
                 </div>
             </div>
         </div>
@@ -47,10 +47,12 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
     <div class="col-md-6 col-sm-12 padding-left">
         <div class="head-box-right" style="background-color:<?php echo $panelrighttopbackgroundcolor; ?>">
             <div class="head-box-right-top-wrap">
-                <img src='<?php echo $panelrighttopimage; ?>' />
+                <img src='<?php echo $panelrighttopimage; ?>' alt="Bild des rechten oberen Panels">
                 <h2><?php echo $panelrighttopueberschrift; ?></h2>
                 <div class="bottom-link-wrap">
-                    <a href="<?php echo $panelrighttoplink; ?>"><?php echo $panelrighttopsubheadline; ?><img class="icon" src='<?php echo $panelrighttopicon; ?>' /></a>
+                    <a href="<?php echo $panelrighttoplink; ?>" aria-label="Mehr über <?php echo $panelrighttopsubheadline; ?>">
+                        <?php echo $panelrighttopsubheadline; ?><img class="icon" src='<?php echo $panelrighttopicon; ?>' alt="Icon des rechten oberen Panels">
+                    </a>
                 </div>
             </div>
         </div>
@@ -61,7 +63,7 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                 <div class="head-box-right-bottom-right-wrap" style="background-color:<?php echo $panelrightbottombackgroundcolor; ?>">
                     <h2><?php echo $panelrightbottomueberschrift; ?></h2>
                     <div class="bottom-link-wrap">
-                        <p><a href="<?php echo $panelrightbottomlink; ?>"><?php echo $panelrightbottomsubheadline; ?></a></p>
+                        <p><a href="<?php echo $panelrightbottomlink; ?>" aria-label="Mehr über <?php echo $panelrightbottomsubheadline; ?>"><?php echo $panelrightbottomsubheadline; ?></a></p>
                     </div>
                 </div>
             </div>
@@ -83,13 +85,13 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                     <h2><?php echo $paneltopueberschrift; ?></h2>
                     <p><?php echo $paneltopsubheadline; ?></p>
                     <h3><?php echo $paneltopprice; ?><?php echo ' €'; ?></h3>
-                    <img src='<?php echo $paneltopimage; ?>' />
+                    <img src='<?php echo $paneltopimage; ?>' alt="Bild des oberen Panels">
                 </div>
 
                 <div class="head-box-left-bottom-wrap">
                     <h2><?php echo $panelbottomueberschrift; ?></h2>
                     <div class="bottom-link-wrap">
-                        <p><a href="<?php echo $paneltopbottomlink; ?>"><?php echo $panelbottomsubheadline; ?></a></p>
+                        <p><a href="<?php echo $paneltopbottomlink; ?>" aria-label="<?php echo $panelbottomsubheadline; ?>"><?php echo $panelbottomsubheadline; ?></a></p>
                     </div>
                 </div>
 
@@ -100,10 +102,12 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
 
             <div class="head-box-grid-box box-2" style="background-color:<?php echo $panelrighttopbackgroundcolor; ?>">
 
-                <img src='<?php echo $panelrighttopimage; ?>' />
+                <img src='<?php echo $panelrighttopimage; ?>' alt="Bild des rechten oberen Panels">
                 <h2><?php echo $panelrighttopueberschrift; ?></h2>
                 <div class="bottom-link-wrap">
-                    <a href="<?php echo $panelrighttoplink; ?>"><?php echo $panelrighttopsubheadline; ?><img class="icon" src='<?php echo $panelrighttopicon; ?>' /></a>
+                    <a href="<?php echo $panelrighttoplink; ?>" aria-label="<?php echo $panelrighttopsubheadline; ?>">
+                        <?php echo $panelrighttopsubheadline; ?><img class="icon" src='<?php echo $panelrighttopicon; ?>' alt="Icon des rechten oberen Panels">
+                    </a>
                 </div>
 
             </div>
@@ -116,7 +120,7 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                     <div class="head-box-right-bottom-right-wrap" style="background-color:<?php echo $panelrightbottombackgroundcolor; ?>">
                         <h2><?php echo $panelrightbottomueberschrift; ?></h2>
                         <div class="bottom-link-wrap">
-                            <p><a href="<?php echo $panelrightbottomlink; ?>"><?php echo $panelrightbottomsubheadline; ?></a></p>
+                            <p><a href="<?php echo $panelrightbottomlink; ?>" aria-label="Mehr über<?php echo $panelrightbottomsubheadline; ?>erfahren." <?php echo $panelrightbottomsubheadline; ?></a></p>
                         </div>
                     </div>
                 </div>

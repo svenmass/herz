@@ -1,5 +1,11 @@
 </main>
-<footer>
+<footer aria-label="Website Footer">
+    <style>
+        a:focus {
+            outline: 2px solid #0056b3;
+            outline-offset: 2px;
+        }
+    </style>
     <div class="footer-wrap">
         <div class="row">
             <div class="col-sm-2">
@@ -187,7 +193,7 @@
                 <?php
                 $logo = get_field('footer_logo', 'option');
                 if ($logo) : ?>
-                    <img src="<?php echo $logo ?>" />
+                    <img src="<?php echo $logo ?>" alt="Logo der Website" />
                 <?php endif;
                 ?>
             </div>

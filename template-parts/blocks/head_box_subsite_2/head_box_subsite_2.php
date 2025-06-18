@@ -18,6 +18,6 @@ $bottomtext = get_field('head_box_subsite_2_links_bottom_text');
             <p><?php echo $bottomtext; ?></p>
         </div>
     </div>
-    <div class="col-md-6 col-sm-12 col-has-full has-box-bg" style="background-image: url('<?php echo $bgimage; ?>');">
+    <div class="col-md-6 col-sm-12 col-has-full has-box-bg" style="background-image: url('<?php echo $bgimage; ?>');" alt="Hintergrundbild der Unterseite 2">
     </div>
 </div>

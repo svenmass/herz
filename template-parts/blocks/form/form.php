@@ -5,12 +5,12 @@
 ?>
 <?php acf_form_head(); ?>
 <div id="primary">
-	<div id="content" role="main">
+	<div id="content" role="main" aria-labelledby="form-title">
 
 		<?php /* The loop */ ?>
 		<?php while (have_posts()) : the_post(); ?>
 
-			<h1><?php the_title(); ?></h1>
+			<h1 id="form-title"><?php the_title(); ?></h1>
 
 			<?php the_content(); ?>
 

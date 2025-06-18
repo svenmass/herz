@@ -15,9 +15,9 @@ if (have_rows('repeater')) : ?>
             <?php // display a sub field value 
             ?>
             <div class="col-6 col-sm-6 col-md-4 col-lg-2 service-start">
-                <a href="<?php the_sub_field('start_service_link'); ?>">
+                <a href="<?php the_sub_field('start_service_link'); ?>" aria-label="<?php the_sub_field('start_service_item_uberschrift'); ?>">
                     <div class="card">
-                        <img src='<?php the_sub_field('start_service_item_image'); ?>' />
+                        <img src='<?php the_sub_field('start_service_item_image'); ?>' alt="Bild des Serviceangebots">
                         <div class="card-body">
                             <div class="service-start-wrap">
                                 <h3 class="card-title"><?php the_sub_field('start_service_item_uberschrift'); ?></h3>

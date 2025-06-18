@@ -29,7 +29,7 @@ if (have_rows('repeater_accordion')) : ?>
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne-<?php echo esc_attr($uniqueid); ?>-<?php echo esc_attr($count); ?>" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne-<?php echo esc_attr($uniqueid); ?>-<?php echo esc_attr($count); ?>" aria-expanded="false" aria-controls="collapseOne-<?php echo esc_attr($uniqueid); ?>-<?php echo esc_attr($count); ?>">
                                     <p class="accordion-title"><?php the_sub_field('accordion_pannel_ueberschrift'); ?></p>
                                     <i class="fa" aria-hidden="true"></i>
                                 </button>

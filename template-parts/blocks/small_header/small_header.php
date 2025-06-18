@@ -16,7 +16,7 @@ $image = get_field('small_header_image');
                 <p><?php echo $text; ?></p>
             </div>
             <div class="col-md-6 text-center">
-                <img src="<?php echo $image; ?>" />
+                <img src="<?php echo $image; ?>" alt="Bild des schmalen Headers">
             </div>
         </div>
     </div>

@@ -43,13 +43,13 @@ if (have_rows('repeater_slider')) :
 			<div class="row space-between">
 				<div class="col-md-6 col-sm-12 col-has-full">
 					<div class="head-box-left teaserelement-2-box double-image">
-						<img class="d-block w-100" src="<?php echo $imageleft; ?>">
+						<img class="d-block w-100" src="<?php echo $imageleft; ?>" alt="Linkes Bild des Doppelbildes">
 					</div>
 				</div>
 
 				<div class="col-md-6 col-sm-12 col-has-full">
 					<div class="head-box-left teaserelement-2-box double-image">
-						<img class="d-block w-100" src="<?php echo $imageright; ?>">
+						<img class="d-block w-100" src="<?php echo $imageright; ?>" alt="Rechtes Bild des Doppelbildes">
 					</div>
 				</div>
 			</div>

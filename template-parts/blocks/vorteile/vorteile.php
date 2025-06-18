@@ -19,10 +19,10 @@ if (have_rows('repeater_vorteile')) : ?>
                 <div class="card vorteile">
                     <div class="card-body" style="background-color:<?php the_sub_field('vorteile_item_backgroundcolor'); ?>">
                         <?php if (get_sub_field('vorteile_item_link')) : ?>
-                            <a href="<?php the_sub_field('vorteile_item_link'); ?>">
+                            <a href="<?php the_sub_field('vorteile_item_link'); ?>" aria-label="<?php the_sub_field('vorteile_item_uberschrift'); ?>">
                                 <div class="vorteile-wrap flex-box-column">
                                     <h3 class="card-title"><?php the_sub_field('vorteile_item_uberschrift'); ?></h3>
-                                    <img src='<?php the_sub_field('vorteile_item_image'); ?>' />
+                                    <img src='<?php the_sub_field('vorteile_item_image'); ?>' alt="Bild des Vorteils">
                                     <p class="card-text"><?php the_sub_field('vorteile_item_bottom_text'); ?></p>
                                 </div>
                             </a>
@@ -30,7 +30,7 @@ if (have_rows('repeater_vorteile')) : ?>
                         ?>
                             <div class="vorteile-wrap flex-box-column">
                                 <h3 class="card-title"><?php the_sub_field('vorteile_item_uberschrift'); ?></h3>
-                                <img src='<?php the_sub_field('vorteile_item_image'); ?>' />
+                                <img src='<?php the_sub_field('vorteile_item_image'); ?>' alt="Bild des Vorteils">
                                 <p class="card-text"><?php the_sub_field('vorteile_item_bottom_text'); ?></p>
                             </div>
                         <?php endif; // end of if field_name logic 

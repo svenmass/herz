@@ -9,6 +9,7 @@ $image = get_field('image', 'option');
 
 ?>
 <div class="container starter-template">
+<main>
     <div class="row space-between">
         <div class="col-md-12 col-has">
             <div class="flex-box-row has-error has-box-padding text-left" style="background-color:<?php echo $bgcolor; ?>">
@@ -17,10 +18,11 @@ $image = get_field('image', 'option');
                     <p><?php echo $text; ?></p>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="<?php echo $image; ?>" />
+                    <img src="<?php echo $image; ?>" alt="404 Fehlerbild" />
                 </div>
             </div>
         </div>
     </div>
+</main>
 </div>
 <?php get_footer(); ?>

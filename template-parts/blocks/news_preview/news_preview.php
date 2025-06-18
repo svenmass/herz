@@ -16,7 +16,7 @@ if (have_rows('repeater_team')) : ?>
             <div class="col-md-6 col-sm-12 team-col">
                 <div class="row no-gutters">
                     <div class="col-md-6 col-sm-12">
-                        <img src='<?php the_sub_field('teamelement_image'); ?>' />
+                        <img src='<?php the_sub_field('teamelement_image'); ?>' alt="Bild des Teammitglieds">
                     </div>
                     <div class="col-md-6 col-sm-12 has-box-padding" style="background-color:<?php the_sub_field('teamelement_bg_color'); ?>">
                         <h3><?php the_sub_field('teamelement_headline'); ?></h3>
