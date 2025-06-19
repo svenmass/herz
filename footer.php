@@ -158,7 +158,7 @@
                         <?php
                         $uhr = get_field('footer_uhr', 'option');
                         if ($uhr) : ?>
-                            <img class="footer-uhr" src="<?php echo $uhr ?>" />
+                            <img class="footer-uhr" src="<?php echo $uhr ?>" alt="Uhr-Symbol für Öffnungszeiten" />
                         <?php endif;
                         ?>
                         <p><?php
