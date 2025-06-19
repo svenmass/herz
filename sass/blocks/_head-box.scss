@@ -51,6 +51,25 @@
       background-size: cover;
       background-position: center center;
       position: relative;
+      
+      // Dunkler Overlay für besseren Kontrast
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(62, 62, 62, 0.7); // #3e3e3e mit 70% Deckkraft
+        z-index: 1;
+      }
+
+      // Alle Inhalte über den Overlay stellen
+      .head-box-left-top-wrap,
+      .head-box-left-bottom-wrap {
+        position: relative;
+        z-index: 2;
+      }
 
       .head-box-left-top-wrap {
         position: absolute;
@@ -118,14 +137,12 @@
           font-family: 'Titillium Web', sans-serif;
           font-weight: 300;
           font-size: 1.2em;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         p {
           color: #fff;
           font-weight: 700;
           font-size: 0.5em;
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
         }
       }
     }

@@ -47,9 +47,9 @@ main {
   -moz-box-shadow: 0px 0px 2px 0px #c9c9c9;
   box-shadow: 0px 0px 2px 0px #c9c9c9; }
 
-.navbar-collapse {
-  /* max-width: 1400px; */
-  /* justify-content: center; */ }
+.navbar-collapse { /* max-width: 1400px; */
+  /* justify-content: center; */ 
+  display: flex;}
 
 @media (max-width: 1440px) {
   .navbar {
@@ -505,6 +505,7 @@ input[type='radio'] {
   margin-right: 0.1rem;
   padding: 0.4rem;
   -webkit-appearance: none;
+  appearance: none;
   outline: 0.1em solid #222222;
   outline-offset: 0.1em;
   cursor: pointer; }
@@ -657,7 +658,7 @@ label {
 
 .wpcf7-submit {
   background-color: #9baa8a;
-  shadow: none;
+  box-shadow: none;
   border: none;
   color: #fff;
   width: 33% !important;
@@ -768,7 +769,7 @@ label {
   footer p {
     font-size: 0.9rem; }
   footer a {
-    /* font-size: 1.6rem; */ }
+    text-decoration: none;}
   footer ul {
     font-size: 0.7rem; }
   /*mobile Form Styles*/
@@ -979,34 +980,21 @@ label {
       .head-box-grid .head-box-grid-box a {
         font-size: 0.8rem; } }
     /* Box-1 h2 (Hauptbereich) */
-    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap h2 {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    /* Box-1 p (Hauptbereich) */
-    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap p {
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    }
-
-    /* Box-2 h2 (Rechter oberer Bereich) */
-    .head-box-grid .head-box-grid-box.box-2 h2 {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    /* Box-3 h2 (Rechter unterer Bereich) */
-    .head-box-grid .head-box-grid-box.box-3 .head-box-right-bottom h2 {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    /* Box-3 p (Rechter unterer Bereich) */
-    .head-box-grid .head-box-grid-box.box-3 .head-box-right-bottom p {
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-    }
-
-    /* Alle Links */
-    .head-box-grid .head-box-grid-box a {
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-    }
+    .head-box-grid .head-box-grid-box.box-1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(62, 62, 62, 0.7);
+      z-index: 1; }
+    
+    .head-box-grid .head-box-grid-box.box-1 .head-box-left-top-wrap,
+    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap {
+      position: relative;
+      z-index: 2; }
+      
 .service-start {
   color: #3e3e3e; }
 
