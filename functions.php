@@ -147,7 +147,7 @@ if (!function_exists('herz_apotheke_siegen_enqueue_scripts')) :
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
 
         wp_deregister_script('has');
-        wp_enqueue_script('has', get_template_directory_uri() . '/assets/js/has.js', false, null, true);
+        wp_enqueue_script('has', get_template_directory_uri() . '/assets/js/has.js', array('jquery'), null, true);
 
         wp_deregister_script('moment');
         wp_enqueue_script('moment', get_template_directory_uri() . '/assets/js/moment.js', false, null, true);
