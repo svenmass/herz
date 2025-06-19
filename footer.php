@@ -193,7 +193,7 @@
                 <?php
                 $logo = get_field('footer_logo', 'option');
                 if ($logo) : ?>
-                    <img src="<?php echo $logo ?>" alt="Logo der Website" />
+                    <img src="<?php echo $logo ?>" alt="Logo der Herz Apotheke Siegen" />
                 <?php endif;
                 ?>
             </div>
@@ -209,17 +209,17 @@
                 <?php
                 $socialicon1 = get_field('footer_social_logo_1', 'option');
                 if ($socialicon1) : ?>
-                    <a href="<?php the_field('social_logo_1_link', 'option'); ?>" target="_blank"><img class="footer-social" src="<?php echo $socialicon1 ?>" /></a>
+                    <a href="<?php the_field('social_logo_1_link', 'option'); ?>" target="_blank" aria-label="Besuchen Sie uns auf Social Media"><img class="footer-social" src="<?php echo $socialicon1 ?>" alt="Facebook" /></a>
                 <?php endif;
                 ?>
                 <?php
                 $socialicon2 = get_field('footer_social_logo_2', 'option');
                 if ($socialicon2) : ?>
-                    <a href="<?php the_field('social_logo_2_link', 'option'); ?>" target="_blank"><img class="footer-social" src="<?php echo $socialicon2 ?>" /></a>
+                    <a href="<?php the_field('social_logo_2_link', 'option'); ?>" target="_blank" aria-label="Besuchen Sie uns auf Social Media"><img class="footer-social" src="<?php echo $socialicon2 ?>" alt="Instagram" /></a>
                 <?php endif; ?>
                 <?php $socialicon3 = get_field('footer_social_logo_3', 'option');
                 if ($socialicon3) : ?>
-                    <a href="<?php the_field('social_logo_3_link', 'option'); ?>" target="_blank"><img class="footer-social" src="<?php echo $socialicon3 ?>" /></a>
+                    <a href="<?php the_field('social_logo_3_link', 'option'); ?>" target="_blank" aria-label="Besuchen Sie uns auf Social Media"><img class="footer-social" src="<?php echo $socialicon3 ?>" alt="YouTube" /></a>
                 <?php endif; ?>
             </div>
             <div class="footer-social" class="col-sm-3">

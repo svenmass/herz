@@ -505,13 +505,13 @@ input[type='radio'] {
   margin-right: 0.1rem;
   padding: 0.4rem;
   -webkit-appearance: none;
-  outline: 0.1em solid #9baa8a;
+  outline: 0.1em solid #222222;
   outline-offset: 0.1em;
   cursor: pointer; }
 
 input[type='radio']:checked {
   display: inline-block;
-  background-color: #9baa8a; }
+  background-color: #222222; }
 
 .xdsoft_datetimepicker {
   background-color: #f1f2f2 !important;
@@ -519,7 +519,7 @@ input[type='radio']:checked {
   border-left: none !important;
   border-right: none !important;
   border-top: none !important;
-  color: #939598 !important;
+  color: #444444 !important;
   font-family: 'Open Sans', sans-serif;
   padding: 0px !important;
   padding-left: 0 !important;
@@ -530,7 +530,7 @@ input[type='radio']:checked {
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
-  color: #939598; }
+  color: #222222; }
 
 .xdsoft_datetimepicker .xdsoft_datepicker {
   width: 100% !important;
