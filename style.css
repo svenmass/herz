@@ -978,7 +978,35 @@ label {
     @media screen and (max-width: 993px) {
       .head-box-grid .head-box-grid-box a {
         font-size: 0.8rem; } }
+    /* Box-1 h2 (Hauptbereich) */
+    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap h2 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
 
+    /* Box-1 p (Hauptbereich) */
+    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap p {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Box-2 h2 (Rechter oberer Bereich) */
+    .head-box-grid .head-box-grid-box.box-2 h2 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Box-3 h2 (Rechter unterer Bereich) */
+    .head-box-grid .head-box-grid-box.box-3 .head-box-right-bottom h2 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Box-3 p (Rechter unterer Bereich) */
+    .head-box-grid .head-box-grid-box.box-3 .head-box-right-bottom p {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Alle Links */
+    .head-box-grid .head-box-grid-box a {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
 .service-start {
   color: #3e3e3e; }
 
