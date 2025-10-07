@@ -59,3 +59,112 @@
   width: 35%;
   margin-top: 1%;
 }
+
+// Teaserelement 2 mit BEM-Klassen
+.teaserbox-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.teaserbox-col {
+  flex: 0 0 50%;
+  padding: 0 15px;
+  margin-bottom: 2rem;
+}
+
+.teaserbox {
+  position: relative;
+  min-height: 25vh;
+  overflow: hidden;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.teaserbox__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.teaserbox__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.teaserbox__content {
+  position: relative;
+  z-index: 3;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teaserbox__title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.teaserbox__paragraph {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.teaserbox__content-image {
+  width: 35%;
+  float: right;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.teaserbox__link-wrap {
+  margin-top: auto;
+}
+
+.teaserbox__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .teaserbox-col {
+    flex: 0 0 100%;
+  }
+  
+  .teaserbox__title {
+    font-size: 2rem;
+  }
+  
+  .teaserbox__paragraph {
+    font-size: 1.4rem;
+  }
+  
+  .teaserbox__link {
+    font-size: 1.4rem;
+  }
+}

@@ -3,6 +3,8 @@
   bottom: 0;
   margin-bottom: 0.9rem;
   border-bottom: 1px solid #fff;
+  left: 30px;
+  right: 30px;
 
   p {
     margin-bottom: 0;
@@ -47,29 +49,17 @@
         padding-bottom: 90%;
       }
 
+      background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 60%,
+        #3e3e3e 60%,
+        #3e3e3e 100%
+      );
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       position: relative;
-      
-      // Dunkler Overlay für besseren Kontrast
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(62, 62, 62, 0.7); // #3e3e3e mit 70% Deckkraft
-        z-index: 1;
-      }
-
-      // Alle Inhalte über den Overlay stellen
-      .head-box-left-top-wrap,
-      .head-box-left-bottom-wrap {
-        position: relative;
-        z-index: 2;
-      }
 
       .head-box-left-top-wrap {
         position: absolute;
@@ -80,7 +70,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         padding-bottom: 40%;
-        color: #575756;
+        color: #575756; // Dunkle Schrift auf weißem Hintergrund
         padding-left: 15px;
         padding-top: 15px;
 
@@ -93,16 +83,18 @@
           font-weight: 300;
           font-size: 1.1em;
           margin: 0;
+          color: #575756; // Dunkle Schrift
         }
 
         h3 {
           font-weight: 700;
           font-size: 0.8em;
           margin: 0;
+          color: #575756; // Dunkle Schrift
         }
 
         p {
-          color: #575756;
+          color: #575756; // Dunkle Schrift
           font-weight: 400;
           text-decoration: none;
           font-size: 0.6em;
@@ -133,14 +125,14 @@
         }
 
         h2 {
-          color: #fff;
+          color: #fff; // Weiße Schrift auf dunklem Hintergrund
           font-family: 'Titillium Web', sans-serif;
           font-weight: 300;
           font-size: 1.2em;
         }
 
         p {
-          color: #fff;
+          color: #fff; // Weiße Schrift
           font-weight: 700;
           font-size: 0.5em;
         }

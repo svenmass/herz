@@ -17,34 +17,50 @@ $teaser2paragraphright = get_field('teaserelement_2_rechts_absatz');
 $teaser2linkright = get_field('teaserelement_2_rechts_link');
 
 ?>
-<div class="row space-between">
-    <div class="col-md-6 col-sm-12 col-has">
-        <div class="teaserelement-2-box teaserelement-box flex-box-column has-box-padding has-box-bg" style="background-image: url('<?php echo $teaser2bgleft; ?>');">
-            <div>
-                <h2><?php echo $teaser2ueberschriftleft; ?></h2>
-                <p><?php echo $teaser2paragraphleft; ?></p>
-            </div>
-            <img src="<?php echo $teaser2imageleft; ?>" alt="Bild des linken Teaserelements 2">
-            <div class="bottom-link-wrap">
-                <a href="<?php echo $teaser2linkleft; ?>" aria-label="Mehr über <?php echo $teaser2subheadlineleft; ?>">
-                    <?php echo $teaser2subheadlineleft; ?>
-                </a>
+<div class="teaserbox-row">
+
+    <!-- Linker Teaser -->
+    <div class="teaserbox-col">
+        <div class="teaserbox" role="region" aria-label="<?php echo esc_attr($teaser2ueberschriftleft); ?>">
+            <?php if ($teaser2bgleft): ?>
+                <img src="<?php echo esc_url($teaser2bgleft); ?>" alt="" aria-hidden="true" class="teaserbox__image" />
+            <?php endif; ?>
+            <div class="teaserbox__overlay"></div>
+            <div class="teaserbox__content">
+                <h2 class="teaserbox__title"><?php echo wp_kses_post($teaser2ueberschriftleft); ?></h2>
+                <p class="teaserbox__paragraph"><?php echo wp_kses_post($teaser2paragraphleft); ?></p>
+                <?php if ($teaser2imageleft): ?>
+                    <img src="<?php echo esc_url($teaser2imageleft); ?>" alt="Bild des linken Teaserelements 2" class="teaserbox__content-image" />
+                <?php endif; ?>
+                <div class="teaserbox__link-wrap">
+                    <a href="<?php echo esc_url($teaser2linkleft); ?>" class="teaserbox__link" aria-label="<?php echo esc_attr($teaser2subheadlineleft); ?>">
+                        <?php echo wp_kses_post($teaser2subheadlineleft); ?>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-6 col-sm-12 col-has">
-        <div class="teaserelement-2-box teaserelement-box flex-box-column has-box-padding has-box-bg" style="background-image: url('<?php echo $teaser2bgright; ?>');">
-            <div>
-                <h2><?php echo $teaser2ueberschriftright; ?></h2>
-                <p><?php echo $teaser2paragraphright; ?></p>
-            </div>
-            <img src="<?php echo $teaser2imageright; ?>" alt="Bild des rechten Teaserelements 2">
-            <div class="bottom-link-wrap">
-                <a href="<?php echo $teaser2linkright; ?>" aria-label="Mehr über <?php echo $teaser2subheadlineright; ?>">
-                    <?php echo $teaser2subheadlineright; ?>
-                </a>
+    <!-- Rechter Teaser -->
+    <div class="teaserbox-col">
+        <div class="teaserbox" role="region" aria-label="<?php echo esc_attr($teaser2ueberschriftright); ?>">
+            <?php if ($teaser2bgright): ?>
+                <img src="<?php echo esc_url($teaser2bgright); ?>" alt="" aria-hidden="true" class="teaserbox__image" />
+            <?php endif; ?>
+            <div class="teaserbox__overlay"></div>
+            <div class="teaserbox__content">
+                <h2 class="teaserbox__title"><?php echo wp_kses_post($teaser2ueberschriftright); ?></h2>
+                <p class="teaserbox__paragraph"><?php echo wp_kses_post($teaser2paragraphright); ?></p>
+                <?php if ($teaser2imageright): ?>
+                    <img src="<?php echo esc_url($teaser2imageright); ?>" alt="Bild des rechten Teaserelements 2" class="teaserbox__content-image" />
+                <?php endif; ?>
+                <div class="teaserbox__link-wrap">
+                    <a href="<?php echo esc_url($teaser2linkright); ?>" class="teaserbox__link" aria-label="<?php echo esc_attr($teaser2subheadlineright); ?>">
+                        <?php echo wp_kses_post($teaser2subheadlineright); ?>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
 </div>

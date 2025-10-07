@@ -83,7 +83,7 @@ main {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #9baa8a;
+  color: #000000;
   background-color: transparent; }
 
 .navbar-dark .navbar-brand {
@@ -106,13 +106,13 @@ main {
   padding-left: 0.4rem; }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #9baa8a; }
+  color: #000000; }
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #9baa8a; }
+  color: #000000; }
 
 /* mega menu start */
 @media screen and (min-width: 600px) {
@@ -177,7 +177,7 @@ main {
   color: #575756; }
 
 .meta-menu-right a:hover {
-  color: #9baa8a;
+  color: #000000;
   text-decoration: none; }
 
 @media (max-width: 1440px) {
@@ -215,7 +215,7 @@ a {
   color: #575756; }
 
 a:hover {
-  color: #9baa8a;
+  color: #000000;
   text-decoration: none; }
 
 ul {
@@ -826,12 +826,16 @@ label {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-      position: relative; }
+      position: relative;
+      background-color: rgba(255,255,255,0.01); /* nahezu unsichtbar */ 
+      }
       @media screen and (max-width: 768px) {
         .head-box-grid .head-box-grid-box.box-1 {
           grid-column: 1/2;
           grid-row: 1/2;
-          padding-bottom: 90%; } }
+          padding-bottom: 90%; 
+          color:#3e3e3e} }
+          
       .head-box-grid .head-box-grid-box.box-1 .head-box-left-top-wrap {
         position: absolute;
         top: 5%;
@@ -877,9 +881,10 @@ label {
         text-align: left; }
         .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap .bottom-link-wrap {
           position: relative;
-          max-width: auto; }
+          max-width: auto; 
+        }
         .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap h2 {
-          color: #fff;
+          color: #ffffff;
           font-family: 'Titillium Web', sans-serif;
           font-weight: 300;
           font-size: 1.2em; }
@@ -979,22 +984,7 @@ label {
     @media screen and (max-width: 993px) {
       .head-box-grid .head-box-grid-box a {
         font-size: 0.8rem; } }
-    /* Box-1 h2 (Hauptbereich) */
-    .head-box-grid .head-box-grid-box.box-1::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(62, 62, 62, 0.7);
-      z-index: 1; }
-    
-    .head-box-grid .head-box-grid-box.box-1 .head-box-left-top-wrap,
-    .head-box-grid .head-box-grid-box.box-1 .head-box-left-bottom-wrap {
-      position: relative;
-      z-index: 2; }
-      
+
 .service-start {
   color: #3e3e3e; }
 
@@ -1409,6 +1399,173 @@ label {
     @media (max-width: 768px) {
       .teaserbox-col {
         flex-basis: 100%;
+      }
+    }
+
+    .teaserelement {
+      color: #808285;
+    }
+    
+    .teaserelement-box {
+      min-height: 25vh;
+      text-align: left;
+      color: #fff;
+      overflow: hidden;
+      justify-content: space-between;
+      padding-bottom: 80px !important;
+      position: relative;
+      .bottom-link-wrap {
+        bottom: 15px;
+        left: 15px;
+      }
+    }
+    
+    .teaserelement-box h2 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .teaserelement-box p {
+      font-size: 0.7em;
+      color: #fff;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    
+    .teaserelement-box a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      margin-bottom: 0 !important;
+    }
+    
+    @media (min-width: 320px) and (max-width: 991px) {
+      .teaserelement-box {
+        margin-bottom: 1rem;
+      }
+      .teaserelement-box h2 {
+        font-size: 2rem;
+      }
+      .teaserelement-box p {
+        font-size: 1.4em;
+      }
+      .teaserelement-box a {
+        font-size: 1.4rem;
+      }
+    }
+    
+    .teaserelement-2-box {
+      height: 100%;
+    }
+    
+    .teaserelement-2-box img {
+      float: right;
+      width: 35%;
+      margin-top: 1%;
+    }
+    
+    .teaserbox-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    
+    .teaserbox-col {
+      padding: 0 15px;
+      margin-bottom: 2rem;
+    }
+    
+    .teaserbox {
+      position: relative;
+      min-height: 25vh;
+      overflow: hidden;
+      border-radius: 8px;
+      color: #fff;
+    }
+    
+    .teaserbox__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+    
+    .teaserbox__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+    
+    .teaserbox__content {
+      position: relative;
+      z-index: 3;
+      padding: 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .teaserbox__title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .teaserbox__paragraph {
+      font-size: 0.9rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+    
+    .teaserbox__content-image {
+      width: 35%;
+      float: right;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    
+    .teaserbox__link-wrap {
+      margin-top: auto;
+    }
+    
+    .teaserbox__link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+    
+    @media (max-width: 767px) {
+
+      
+      .teaserbox__title {
+        font-size: 2rem;
+      }
+      
+      .teaserbox__paragraph {
+        font-size: 1.4rem;
+      }
+      
+      .teaserbox__link {
+        font-size: 1.4rem;
       }
     }
 

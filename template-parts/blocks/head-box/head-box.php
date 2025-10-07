@@ -106,7 +106,7 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                 <h2><?php echo $panelrighttopueberschrift; ?></h2>
                 <div class="bottom-link-wrap">
                     <a href="<?php echo $panelrighttoplink; ?>" aria-label="<?php echo $panelrighttopsubheadline; ?>">
-                        <?php echo $panelrighttopsubheadline; ?><img class="icon" src='<?php echo $panelrighttopicon; ?>' alt="Icon des rechten oberen Panels">
+                        <?php echo $panelrighttopsubheadline; ?>
                     </a>
                 </div>
 
@@ -120,7 +120,8 @@ $panelrightbottomlink = get_field('head_box_right_bottom_link');
                     <div class="head-box-right-bottom-right-wrap" style="background-color:<?php echo $panelrightbottombackgroundcolor; ?>">
                         <h2><?php echo $panelrightbottomueberschrift; ?></h2>
                         <div class="bottom-link-wrap">
-                            <p><a href="<?php echo $panelrightbottomlink; ?>" aria-label="Mehr über<?php echo $panelrightbottomsubheadline; ?>erfahren." <?php echo $panelrightbottomsubheadline; ?></a></p>
+                            <p><a href="<?php echo $panelrightbottomlink; ?>" aria-label="<?php echo $panelrightbottomsubheadline; ?>"><?php echo $panelrightbottomsubheadline; ?></a></p>
+                            <!-- DEBUG: ACF-Feld Inhalt: "<?php echo $panelrightbottomsubheadline; ?>" -->
                         </div>
                     </div>
                 </div>
